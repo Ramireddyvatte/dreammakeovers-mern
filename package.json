@@ -1,0 +1,25 @@
+{
+  "name": "dream-makeovers",
+  "version": "1.0.0",
+  "description": "dream makeovers application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "both": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "Rami Reddy",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}
